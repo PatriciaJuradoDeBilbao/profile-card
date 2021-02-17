@@ -5,13 +5,27 @@
 
 body {
   background-color: #19a2ae;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
+
+.bg-top {
+  position: absolute;
+  top: -410px;
+  left: -20px;
+  z-index: -1; }
+
+.bg-bottom {
+  position: absolute;
+  bottom: -444px;
+  right: -69px;
+  z-index: -1; }
 
 .card-container {
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -39,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -40px;
+  top: -50px;
   border-bottom: 1px solid rgba(150, 150, 150, 0.2); }
   .profile-info-top {
     display: flex;
