@@ -1,15 +1,14 @@
-
 .bg-top {
-    position: absolute;
-    top: -410px;
-    left: -20px;
+    position: fixed;
+    top: -521px;
+    left: -758px;
     z-index: -1;
 }
 
 .bg-bottom {
-    position: absolute;
-    bottom: -444px;
-    right: -69px;
+    position: fixed;
+    bottom: -541px;
+    right: -722px;
     z-index: -1;
 }
 
@@ -22,8 +21,8 @@
     .card {
         display: flex;
         flex-direction: column;
-        width: 350px;
-        height: 380px;
+        width: 320px;
+        height: 350px;
         background-color: $color-white;
         border-radius: 20px;
     }
@@ -32,11 +31,12 @@
 .top-img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: 320px;
 }
 
 .container-profile-img {
     margin: auto;
-
+    
     .profile-img {
         border-radius: 50%;
         border: 5px solid $color-white;
@@ -51,30 +51,30 @@
     position: relative;
     top: -50px;
     border-bottom: 1px solid rgba($color-neutral, 0.2) ;
-
+    
     &-top {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         &-name {
             font-size:  $font-size-lg;
             padding-right: 10px;
             color: $color-very-dark;
             font-weight: 700;
         }
-
+        
         &-age {
             font-size: $font-size-lg;
             color: $color-dark-greyish;
             font-weight: 400;
         }
     }
-
+    
     .location-container {
         display: flex;
         justify-content: center;
-
+        
         &-city {
             color:  $color-dark-greyish;
             font-size:  $font-size-md;
@@ -89,18 +89,18 @@
     justify-content: space-between;
     align-items: center;
     margin: -20px 50px 20px 50px;
-
+    
     &-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        
         .stats {
             color: $color-very-dark;
             font-size: $font-size-lg;
             font-weight: 700;
-
+            
             &-title {
                 color:  $color-dark-greyish;
                 font-weight: 400;
@@ -109,5 +109,28 @@
                 margin-top: 5px;
             }
         }
+    }
+}
+
+// DESKTOP
+@media (min-width: $breakpoint-desktop) {
+
+    .bg-top {
+        position: fixed;
+        top: -410px;
+        left: -20px;
+        z-index: -1;
+    }
+    
+    .bg-bottom {
+        position: fixed;
+        bottom: -444px;
+        right: -69px;
+        z-index: -1;
+    }
+        
+    .card {
+        width: 350px;
+        height: 380px;
     }
 }
